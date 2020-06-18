@@ -5,6 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  // PrivateRoute,
 } from 'react-router-dom';
 import Home from './components/home';
 
@@ -15,7 +16,6 @@ const App = () => (
   <Router>
     <div>
       <Switch>
-        {/* <Home /> */}
         <Route exact path="/feed" component={Home} />
         <Route exact path="/:id" component={filmDetails} />
       </Switch>
